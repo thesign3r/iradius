@@ -1,9 +1,7 @@
-# IRADIUS - Find nearest locations in radius
+# [IRADIUS.DIRECTORY](https://iradius.directory/) - Find locations in given radius
 
-This API is intended to retrieve the nearest locations within a radius of the specified location.
+This API retrieves the nearest locations within a radius of the specified location.
 Currently, it processes more than 180,000 locations where the number of inhabitants exceeds 500 people.
-
-**For now, the use is free of charge. If I have to invest in more serious hosting, I will have to charge a small fee.**<br><br> Contact me at [info@thesigner.pl](mailto:info@thesigner.pl 'info@thesigner.pl') for self-hosting solutions.
 
 ## Basic usage
 <pre>
@@ -51,8 +49,7 @@ JSON.parse(response)
  curl -X GET \
   -H "Content-type: application/json" \
   -H "Accept: application/json" \
-  -d '{"location":"gdynia","radius":"1"}' \
-  "https://iradius.directory/api/findbyname"
+  "https://iradius.directory/api/findbyname?country=GB&location=London&radius=10"
 ```
 
 
@@ -78,6 +75,9 @@ JSON.parse(response)
   }
 ]
 ```
+
+!> **For now, the use is free of charge. If I have to invest in more serious hosting, I will have to charge a small fee.**<br><br> Contact me at [info@thesigner.pl](mailto:info@thesigner.pl 'info@thesigner.pl') for self-hosting solutions.
+
 
 ## TODO
 - [x] Find locations by base location name
